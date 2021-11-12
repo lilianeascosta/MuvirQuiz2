@@ -1,0 +1,273 @@
+	<html>
+<head>
+	<!-- HTML Meta Tags -->
+	<title>Quiz | Cartões Nacionais</title>
+	<meta name="description" content="DESCUBRA O CARTÃO DE CRÉDITO IDEAL PARA VOCÊ!">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Quiz | Cartões Nacionais">
+	<meta itemprop="description" content="DESCUBRA O CARTÃO DE CRÉDITO IDEAL PARA VOCÊ!">
+	<meta itemprop="image" content="https://image.freepik.com/vetores-gratis/lista-de-verificacao-de-empresaria-mulher-de-sucesso-verificando-o-sucesso-da-tarefa-completou-as-tarefas-de-negocios-ilustracao-da-lista-de-marcas-de-selecao_102902-1213.jpg">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://quiz.cartoesnacionais.com.br">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Quiz | Cartões Nacionais">
+	<meta property="og:description" content="DESCUBRA O CARTÃO DE CRÉDITO IDEAL PARA VOCÊ!">
+	<meta property="og:image" content="https://image.freepik.com/vetores-gratis/lista-de-verificacao-de-empresaria-mulher-de-sucesso-verificando-o-sucesso-da-tarefa-completou-as-tarefas-de-negocios-ilustracao-da-lista-de-marcas-de-selecao_102902-1213.jpg">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Quiz | Cartões Nacionais">
+	<meta name="twitter:description" content="DESCUBRA O CARTÃO DE CRÉDITO IDEAL PARA VOCÊ!">
+	<meta name="twitter:image" content="https://image.freepik.com/vetores-gratis/lista-de-verificacao-de-empresaria-mulher-de-sucesso-verificando-o-sucesso-da-tarefa-completou-as-tarefas-de-negocios-ilustracao-da-lista-de-marcas-de-selecao_102902-1213.jpg">
+
+	<!-- Meta Tags Generated via http://heymeta.com -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta charset="utf-8">
+    <!-- bootstrap -->
+	<link href="index.css" rel="stylesheet">
+	<!-- icone da barra da página -->
+	<link class="favicon" rel="shortcut icon" href="./assets/favicon.png"/>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc-t78aAAAAAE4xbA206AOGa9yyIhCLhJcqc0Tl"></script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 367273257 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-367273257"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'AW-367273257');
+	</script>
+</head>
+
+<body class="container">
+	<div class="body">
+		<div class="centraliza">
+			<img id="logo" src="./assets/logo.png" alt="logo muvir">
+			<!-- <img id="circles" src="./assets/circles.png" alt="imagem circulos"> -->
+		</div>
+		<!-- andamento das respostas do formulário -->
+		
+		
+		<h2 class="centraliza" id="textTitle">Descubra o cartão de crédito ideal para você!</h2>
+		<div class="selector">
+			<div class="questions">
+				<div id="question-1" class="question1">
+					<div class="progress">
+						<div class="progressBarBack">
+							<div class="progress-bar1"></div>
+						</div>
+						<div class="txtBar">1 de 3</div>
+					</div>
+					<h3 class="centraliza">O que é mais importante para ti?</h3>
+					<div>
+						<button class="btnQ" onclick="question1(1)">Limite mais alto</button>
+					</div>
+					<div>
+						<button class="btnQ" onclick="question1(2)">Anuidade Zero</button>
+					</div>
+					<div>
+						<button class="btnQ" onclick="question1(3)">Acúmulo de Milhas</button>
+					</div>
+				</div>
+
+				<div id="question-2" class="question2" style="display:none;">
+					<div class="progress">
+						<div class="progressBarBack">
+							<div class="progress-bar2"></div>
+						</div>
+						<div class="txtBar">2 de 3</div>
+					</div>
+					<h3 class="centraliza">Qual limite de cartão seria ideal?</h3>
+					<div class="">
+						<button class="btnQ" onclick="question2(1)">Até R$ 1.000,00</button>
+					</div>
+					<div class="my-3">
+						<button class="btnQ" onclick="question2(2)">Entre R$ 1.000,00 e R$ 2.500,00</button>
+					</div>
+					<div class="">
+						<button class="btnQ" onclick="question2(3)">Acima de R$ 2.500,00</button>
+					</div>
+				</div>
+
+				<div id="question-3" class="question3" style="display:none;">
+					<div class="progress">
+						<div class="progressBarBack">
+							<div class="progress-bar3"></div>
+						</div>
+						<div class="txtBar">3 de 3</div>
+					</div>
+					<h3 class="centraliza">Está negativado?</h3>
+					<div class="">
+						<button class="btnQ" onclick="question3(1)">Sim</button>
+					</div>
+					<div class="my-3">
+						<button class="btnQ" onclick="question3(2)">Não</button>
+					</div>
+				</div>
+
+				<div id="form" class="question4" style="display:none">
+					<div class="progress">
+						<div class="progressBarBack">
+							<div class="progress-bar4"></div>
+						</div>
+					</div>
+					<h3 class="centraliza">Preencha os dados abaixo e enviaremos seu cartão</h3>
+					<form  onsubmit="checkCaptcha(); return false;">
+						<input id="form-name" class="btnF" type="text" placeholder="Insira o seu primeiro nome!*" required>
+						<input id="form-email" class="btnF" type="email" placeholder="Insira o seu melhor e-mail*" required>
+							<div class="verificaEmail">
+								<div class="spinner" style="display:none" id="loading"></div>
+								<div class="confirmando">
+									<p id="info-message" class="validacaoE" style="display:none;">
+										Estamos confirmando seu e-mail...		
+									</p> 
+								</div>
+							</div>
+						<input id="form-zap" class="btnF" type="text" placeholder="Insira seu WhatsApp" />
+						<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+						<input type="hidden" name="action" value="validate_captcha">
+
+						<button id="form-send" type="submit" class="btnC" disabled>Mostre meu cartão!!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rodape">
+		<div>©2021 MUVIR - CNPJ: 35.214.648/0001-45</div>
+		<div>contato: contato@muvir.com.br</div>
+		<a href="https://muvir.com.br/termos-de-uso/">Termos de uso</a>
+		<a href="https://muvir.com.br/politica-de-privacidade/">Política de privacidade</a>
+	</div>
+
+	<script type="text/javascript">
+		var answer1 = answer2 = answer3 = 0;
+		function question1(answer) {
+			answer1 = answer;
+			$('#question-title').html('Qual limite de cartão seria ideal?')
+			$('#question-1').hide();
+			$('#question-2').show();
+		}
+
+		function question2(answer) {
+			answer2 = answer;
+			$('#question-title').html('Está negativado?')
+			$('#question-2').hide();
+			$('#question-3').show();
+		}
+
+		function question3(answer) {
+			answer3 = answer;
+			$('#question-title').html('Digite seus dados para que possamos te enviar qual o cartão ideal!')
+			$('#question-3').hide();
+			$('#form').show();
+
+			changeText();
+		}
+
+		function checkCaptcha() {
+			// $('#form-send').removeAttr('disabled');
+			console.log('checkCaptcha');
+			grecaptcha.execute('6Lc-t78aAAAAAE4xbA206AOGa9yyIhCLhJcqc0Tl', {action:'validate_captcha'}).then(function(token) {
+            	// add token value to form
+            	$('#g-recaptcha-response').val(token);
+            	sendAC();
+        	});
+		}
+
+		function sendAC() {
+
+			gtag('event', 'conversion', {'send_to': 'AW-367273257/oAM3CMK40pMCEKnKkK8B'});
+			
+			$.post( "sendAC.php", {
+				email: $('#form-email').val(),
+				name: $('#form-name').val(),
+				zap: $('#form-zap').val()
+			}).done(function( data ) {
+			    if(answer3 == 1)
+			    	window.location = 'https://cartoesnacionais.com.br/lp-super-digital/?utm_source=Pouso_google';
+			    else
+			    	window.location = 'https://cartoesnacionais.com.br/lp-santander-sx/?utm_source=Pouso_google';
+			}).fail(function() {
+			    console.log('fail sendAC');
+			});
+		}
+	</script>
+
+	<script>
+		loading = document.getElementById('loading');
+	    QuickEmailVerification = {
+			pubKey: "375da89b6c830b5f8da9ddc0b2010e",
+	    	showPoweredBy: false,
+	    	showResultBox: false
+		}
+		field = document.querySelector("input[type='email']");
+		field.addEventListener('qevOnverify', function(e) {
+		    this.disabled = true;
+        	$(loading).show();
+        	$('#info-message').removeClass('text-danger').addClass('text-warning').text('Estamos verificando seu e-mail...').show();
+		});
+		field.addEventListener('qevOnverified', function(e) {
+	        if(e.detail.result.allow == "true"){
+	        	document.querySelector("button[type='submit']").disabled = false;
+	        	$('#info-message').hide();
+	        	this.disabled = false;
+	        	this.style = "border-color: green;";
+	        	$(loading).hide();
+	        }else{
+	        	document.querySelector("button[type='submit']").disabled = true;
+	        	$('#info-message').removeClass('text-warning').addClass('text-danger').text('E-mail incorreto ou inválido!').show();
+	        	this.disabled = false;
+	        	this.style = "border-color: red;";
+	        	$(loading).hide();
+	        }
+	    });
+	</script>
+
+	<script type="text/javascript" src="https://cdn.quickemailverification.com/js/verifyemail.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	
+	<script src="/mail-genie.js"></script>
+	
+	<script>
+    	const field = new EmailGenie('#form-email', {
+			domains: ['gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com.br'],
+			overrideDomains: true,
+		});
+	</script>
+
+	<script src="/jquery.mask.min.js"></script>
+	
+	<script>
+		
+		$(function(){
+	        $('.zapzap').mask('(00) 00000-0000');
+	        // $('.zapzap').css('border', '5px solid blue');
+	        console.log('MASK zapzap');
+
+	        // $('#form-send').removeAttr('disabled');
+    	});
+
+	</script>
+
+	<script>
+		// função para mudar o título da página quando o usuário chegar no preenchimento do formulário
+		function changeText() {
+			var txt = document.getElementById('textTitle');
+			console.log("txt: ", txt);
+			if(txt.innerHTML == "Descubra o cartão de crédito ideal para você!") {
+				txt.innerHTML = "Excelente! Encontramos o cartão perfeito para você!";
+			}
+			else {
+				txt.innerHTML = "Descubra o cartão de crédito ideal para você!";
+			}
+		}
+	</script>
+</body>
+</html>

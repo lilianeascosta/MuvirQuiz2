@@ -1,0 +1,324 @@
+/*
+	by: Liliane
+*/
+
+.favicon {
+	border-radius: 50%;
+}
+
+.logo {
+	justify-content: center;
+}
+
+.container{
+    background-color: #051041;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Roboto, sans-serif;
+}
+
+.body {
+	margin-bottom: 0%;
+}
+
+.centraliza {
+	justify-content: center;
+	display: flex;
+	/* topo | direita | inferior | esquerda */
+	margin: auto auto 2% auto;
+	align-items: center;
+	text-align: center;
+}
+
+.header {
+	display: inline-block;
+}
+
+#circles {
+	background-color: red;
+	position: relative;
+   	/* top: 100%;
+   	right: 100%; */
+	margin-left: 100%;
+	margin-right: 0%;
+}
+
+.required-field {
+	border: 1px solid red;
+}
+
+h2 {
+	color: #fff;
+	font-size: 18;
+	font-weight: bolder;
+}
+
+h3 {
+	color: #C4C4C4;
+	font-size: 16;
+	font-weight: bolder;
+}
+
+.selector {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0%;
+}
+
+.selector button {
+	font-weight: 500;
+	font-weight: bolder;
+	height: 10%;
+	margin: 10px auto 10px auto;
+}
+
+.progress {
+	margin-bottom: 5%;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.progressBarBack {
+	background-color: #DADADA;
+	position: relative;
+	height: 25px;
+	width: 666px;
+	border-radius: 20px;
+	position: left;
+	display: inline-block;
+}
+
+.txtBar {
+	font-size: 10px;
+	color: #fff;
+	position: right;
+	display: inline-block;
+}
+
+.progressBarBack .progress-bar1 {
+	position: absolute;
+	height: 100%;
+	background-color: #E13300;
+	width: 25%;
+	border-radius: 20px;
+}
+
+.progressBarBack .progress-bar2 {
+	position: absolute;
+	height: 100%;
+	background-color: #E13300;
+	width: 50%;
+	border-radius: 20px;
+}
+
+.progressBarBack .progress-bar3 {
+	position: absolute;
+	height: 100%;
+	background-color: #E13300;
+	width: 75%;
+	border-radius: 20px;
+}
+
+.progressBarBack .progress-bar4 {
+	position: absolute;
+	height: 100%;
+	background-color: #E13300;
+	width: 100%;
+	border-radius: 20px;
+}
+
+/* botão para questão */
+.btnQ{
+	background-color: #fff;
+	border-radius: 20px;
+	width: 286px;
+	padding: 12px;
+	justify-content: center;
+	display: flex;
+	text-transform: uppercase;
+}
+
+/* botão para formulário */
+.selector .btnF {
+	background-color: #fff;
+	border-radius: 20px;
+	width: 286px;
+	padding: 12px;
+	justify-content: center;
+	display: flex;
+	margin: 10px auto 10px auto;
+}
+
+/* modal para verificação de email */
+.selector .modalE {
+	background-color: #E13300;
+	color: #fff;
+	border-radius: 20px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+}
+
+/* botão para confirmação do quiz */
+.selector .btnC {
+	background-color: #E13300;
+	color: #fff;
+	border-radius: 20px;
+	width: 286px;
+	padding: 12px;
+	justify-content: center;
+	display: flex;
+	text-transform: uppercase;
+	border-color: #E13300;
+	margin-top: 3%;
+}
+
+.selector .btnQ:hover{
+	background-color: #DADADA;
+	cursor: pointer;
+}
+
+.selector .btnC:hover{
+	background-color: #b62b01;
+	cursor: pointer;
+}
+
+/* Para validacao do email, not working for now */
+.validacaoE {
+	color:#ffc107!important;
+	text-align:center!important;
+	margin-top:.5rem!important;
+	margin-bottom:.5rem!important
+
+}
+
+.verificaEmail {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* faz o spinner rodar */
+@keyframes spinner {
+	to {transform: rotate(360deg);}
+}
+
+.spinner {
+	margin-top: 5px;
+}
+
+.spinner:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-right: 20%;
+	border-radius: 50%;
+	border: 2px solid #ffc107;
+	border-top-color: #333;
+	animation: spinner .6s linear infinite;
+}
+
+/* Estilização da imagem do canto inferior */
+.searchImg {
+	width: 12rem;
+	height: 12rem;
+	position:fixed;
+	float:inline-start;
+	bottom:0;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	border-radius: 50%;
+	z-index: 99;
+}
+
+.rodape{
+	color: white;
+	text-align: center;
+	font-size: 11px;
+	bottom: 0;
+	position:absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-bottom: 1%;
+	background-color: #7E7E7E;
+	width: 100%;
+}
+
+.rodape a {
+	text-decoration: none;
+	margin-inline: 5%;
+	color: black;
+	font-weight: 1000;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+	.progressBarBack {
+		width: 400px;
+	}
+	.container {
+		margin: 10%;
+	}
+	#logo {
+		margin-bottom: 1%;
+	}
+	.progress {
+		margin-top: 1%;
+	}
+	.progressBarBack {
+		height: 20px;
+	}
+	.questions {
+		margin-top: 10%;
+	}
+	.question-1 {
+		margin-top: 10%;
+	}
+	.searchImg {
+		margin-left: -40px;
+		height: 5rem;
+		width: 5rem;
+		z-index: -1;
+		z-index: 99;
+	}
+	.rodape {
+		font-size: 6px;
+	}
+	.rodape a{
+		font-size: 7px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	img {
+		max-height: 35vh!important;
+	}
+
+	.progressBarBack {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h2 {
+		font-size: calc(1.325rem + .3vw);
+	}
+
+	h3 {
+		font-size: calc(1.3rem - 0.1vw);
+	}
+
+	.progressBarBack {
+		width: 150px;
+	}
+}
