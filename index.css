@@ -6,8 +6,9 @@
 	border-radius: 50%;
 }
 
-.logo {
+#logo {
 	justify-content: center;
+	margin-top: 0%;
 }
 
 .container{
@@ -51,6 +52,7 @@ h2 {
 	color: #fff;
 	font-size: 18;
 	font-weight: bolder;
+	margin-bottom: 1%;
 }
 
 h3 {
@@ -76,7 +78,8 @@ h3 {
 }
 
 .progress {
-	margin-bottom: 5%;
+	margin-bottom: 2%;
+	margin-top: 2%;
 	width: 100%;
 	align-items: center;
 	text-align: center;
@@ -134,19 +137,19 @@ h3 {
 /* botão para questão */
 .btnQ{
 	background-color: #fff;
-	border-radius: 20px;
-	width: 286px;
-	padding: 12px;
+	border-radius: 30px;
+	width: 486px;
+	padding: 14px;
 	justify-content: center;
 	display: flex;
-	text-transform: uppercase;
+	margin: 1%;
 }
 
 /* botão para formulário */
 .selector .btnF {
 	background-color: #fff;
 	border-radius: 20px;
-	width: 286px;
+	width: 486px;
 	padding: 12px;
 	justify-content: center;
 	display: flex;
@@ -169,13 +172,13 @@ h3 {
 	background-color: #E13300;
 	color: #fff;
 	border-radius: 20px;
-	width: 286px;
+	width: 486px;
 	padding: 12px;
 	justify-content: center;
 	display: flex;
 	text-transform: uppercase;
 	border-color: #E13300;
-	margin-top: 3%;
+	margin-top: 7%;
 }
 
 .selector .btnQ:hover{
@@ -270,9 +273,10 @@ h3 {
 	}
 	#logo {
 		margin-bottom: 1%;
+		margin-top: 0% !important;
 	}
 	.progress {
-		margin-top: 1%;
+		margin-top: 0% !important;
 	}
 	.progressBarBack {
 		height: 20px;
@@ -295,6 +299,13 @@ h3 {
 	}
 	.rodape a{
 		font-size: 7px;
+	}
+	.btnQ, .btnF, .btnC {
+		width: 286px !important;
+	}
+	h2 {
+		margin-top: 5% !important;
+		font-size: 17 !important;
 	}
 
 }
